@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>Battery Finder Program</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!--ここからHTMLを記述してください。-->
+    <div id="target">
+        <!--navigation-->
+        <div id="navigation" class="bg-primary">
+            <ul class="nav justify-content-center text py-3">
+                Battery Finder Program
+            </ul>
+        </div>
+
+        <!--section-->
+        <div class="bg-light py-5">
+            <div class="container text-cetner">
+                <!--step1-->
+                <div class="col-12 py-2" id="BrandDiv">
+                    <label for="brand" class="form-label">Step1 : Select your brand</label>
+                    <select class="form-control col-12" id="brand">
+                        
+                    </select>
+                </div>
+
+                <!--step2-->
+                <div class="col-12 py-2" id="modelDiv">
+                    <label for="model" class="form-label">step2: Select your model</label>
+                    <select class="form-control col-12" id="model">
+                        
+                    </select>
+                </div>
+
+                <!--step3-->
+                <div class="col-12 py-2" id="powerDiv">
+                    <label for="power" class="form-label">step3: Input Accessory Power Consumption</label>
+                    <input type="number" class="form-control col-3" id="power" min="0" max="100" value="0">
+                </div>
+
+                <!--step4-->
+                <div class="col-12 py-2" id="batteryDiv">
+                    <label for="battery" class="form-label">step4: Choose Your Battery</label>
+                    <div class="list-group" id="batList">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+    
+</body>
+</html>
+
+
+
